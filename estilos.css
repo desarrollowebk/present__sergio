@@ -176,6 +176,7 @@ header label:hover{
     .imgcatalogo{
       width: 100%;
       border-style: solid;
+      height: 100%;
     }
     .textoinicio {
       margin: 20px;
