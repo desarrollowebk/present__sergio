@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    padding: 10px;
+    margin: 0;
+    background-color:tomato;
+}
+
+header h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    vertical-align: text-bottom;
+    margin: 5px;
+}
+header label{
+    display: none;
+    padding: 10px;
+}
+header label:hover{
+    cursor: pointer;
+    background: rgb(0,0,0,0.3);
+}
+#btn-menu{
+    display: none;
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+    background-color:transparent;
+    font-size: large;
+    font-family: fantasy;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li{
+    border-right: 1px solid wheat;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: seagreen;
+}
+
+.logo{
+    float: center;
+    width: 400px;
+    height: 100px;
+}
+.logotip{
+    margin: 0;
+    width: 200px;
+    float: right;
+}
+.titulo{
+    margin: 5px;
+    background-color:transparent;
+    color: rgb(255, 74, 42);
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+.textoinicio h2{
+    color: tomato;
+}
+.textoinicio{
+    color: white;
+    text-align: center;
+    margin-left: 37%;
+    margin-right: 37%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+}
+.divimg{
+    background-color: tan;
+    width: 100%;
+}
+.grid-container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.imgcatalogo{
+    width: 100%;
+    height: 450px;
+}
+.productos h2{
+    color:rgb(15, 107, 7);
+    font-size: 20px;
+    font-family:sans-serif;
+    text-transform: uppercase;
+}
+.productos p{
+    color: rgb(255, 0, 0);
+    font-family: sans-serif;
+    text-align: right;
+}
+.ciudades ul li{
+    background: black;
+    color: white;
+    text-align:left;
+    font-family:sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+.ciudades h1{
+    color: white;
+    text-align: left;
+    font-family: monospace;
+}
+.redes img{
+    width: 30px;
+
+}
+.redes h2{
+    margin: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.redes ul{
+    text-align: center;
+    margin: 10px;
+}
+.redes li{
+
+    display: inline-block;
+    text-decoration: none;
+}
+#carousel1{
+    float: right;
+    width: 100%;
+}
+@media screen and (max-width:768px){
+  body{
+    width: 100%
+  }
+    header label{
+        display: block;
+        width: 50px;
+    }
+    .menu{
+        position: absolute;
+        margin: -200%;
+        background-color:rgb(0, 0, 0,0.9);
+        padding: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        margin: 20px;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 30px;
+    }
+    .grid-container{
+      grid-template-columns:repeat(2, 1fr);
+      width: 100%;
+    }
+    .textoinicio {
+      margin: 20px;
+      padding: 30px
+      text-align: center;
+      font-family: monospace;
+      font-weight: bold;
+    }
+    .logo{
+      float: center;
+       width: 70%;
+    }
+    .logotip{
+      float: center;
+      width: 20%;
+    }
+}
