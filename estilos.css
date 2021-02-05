@@ -160,7 +160,7 @@ header label:hover{
 }
 .creado a{
   text-decoration: none;
-  color: rgb(0, 255, 136);
+  color: rgb(42, 148, 121);
 }
 @media screen and (max-width:768px){
   body{
